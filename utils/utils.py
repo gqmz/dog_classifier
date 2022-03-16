@@ -206,9 +206,13 @@ def unzip_data(filename):
   with zipfile.ZipFile(filename, "r") as zip_ref:
     zip_ref.extractall()
 
-def jpeg_to_tensor(filename, img_shape=224):
+def jpeg_to_tensor(filename, img_shape=224, scale=False):
     """
     convert jpeg image to resized & normalized tensor
+    Args:
+        filename (str path): path to image file
+        img_shape (int): dimension of square image
+        scale (bool): True - scale pixel values to [0,1]
     """
     #read file
     img = tf.io.read_file(filename)
@@ -217,7 +221,8 @@ def jpeg_to_tensor(filename, img_shape=224):
     #resize image to target size
     img = tf.image.resize(img, size=(img_shape, img_shape))
     #normalization
-    img = img/255.
+    if scale:
+        img = img/255.
     return img
 
 def walk_through_dir(directory):
