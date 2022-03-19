@@ -7,7 +7,7 @@ Dog Classifier is a Streamlit app that takes a user uploaded .jpg image of a dog
 
 To run this application, you'll need [Git][https://git-scm.com/] installed on your machine. From your command line:
 
-'''console
+```
 # Clone this repository
 $ git clone https://github.com/gqmz/dog_classifier.git
 
@@ -19,6 +19,6 @@ $ pip install -r requirements.txt
 
 # Run the app on localhost
 $ streamlit run main.py
-'''
+```
 
 The repository is setup to be deployed on [Heroku][https://www.heroku.com/]
