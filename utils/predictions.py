@@ -20,7 +20,7 @@ from tensorflow import expand_dims
 PROJ_PATH = os.getcwd() #should be repo since this module is called from main.py
 
 #set up model path (use relative because this is being called from main.py)
-MODEL_PATH = os.path.join(PROJ_PATH, "checkpoints/effnetb0_aug_feature/effnetb0_feature.h5")
+MODEL_PATH = os.path.join(PROJ_PATH, "static/model.h5")
 assert os.path.isfile(MODEL_PATH), f"{MODEL_PATH} is not valid, check path"
 model = load_model(MODEL_PATH)
 
