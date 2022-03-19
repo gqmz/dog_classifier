@@ -12,4 +12,5 @@ myenv/
 */__pycache__/*
 
 #ignore notebooks used to train model
-training_notebooks
+training_notebooks/
+checkpoints/
