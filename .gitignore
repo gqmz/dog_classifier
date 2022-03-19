@@ -3,3 +3,10 @@ checkpoints/
 
 #python environment
 myenv/
+
+#mac
+*.DS_Store*
+
+#bytecode
+*.pyc
+*/__pycache__/*
