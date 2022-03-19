@@ -10,3 +10,6 @@ myenv/
 #bytecode
 *.pyc
 */__pycache__/*
+
+#ignore notebooks used to train model
+training_notebooks
