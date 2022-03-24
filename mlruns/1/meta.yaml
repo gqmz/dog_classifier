@@ -1,0 +1,4 @@
+artifact_location: file:///content/drive/MyDrive/github/dogclassifier/mlruns/1
+experiment_id: '1'
+lifecycle_stage: active
+name: effnetb0

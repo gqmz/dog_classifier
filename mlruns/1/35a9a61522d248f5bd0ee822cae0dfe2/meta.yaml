@@ -1,0 +1,15 @@
+artifact_uri: file:///content/drive/MyDrive/github/dogclassifier/mlruns/1/35a9a61522d248f5bd0ee822cae0dfe2/artifacts
+end_time: 1648100705975
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 35a9a61522d248f5bd0ee822cae0dfe2
+run_uuid: 35a9a61522d248f5bd0ee822cae0dfe2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1648100650277
+status: 3
+tags: []
+user_id: root
