@@ -254,3 +254,17 @@ def create_tensorboard_callback(dir_name, experiment_name):
     )
     print(f"Saving Tensorboard log files to: {log_dir}")
     return tensorboard_cb
+
+#image tensor pre-preprocessing
+def preprocess_image(image, label, img_shape=224):
+    """
+    resize image tensor to (img_shape, img_shape, color_channels) & convert to float32 
+    Args:
+        image (tensor): 
+        label (tensor):
+        img_shape (int): height & width of output tensor
+    """
+    image = tf.image.resize(image, (img_shape, img_shape))
+    image = tf.cast(image, dtype=tf.float32)
+
+    return image, label
