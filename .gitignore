@@ -7,10 +7,11 @@ myenv/
 #mac
 *.DS_Store*
 
-#bytecode
-*.pyc
-*/__pycache__/*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
 #ignore notebooks used to train model
-training_notebooks/
-checkpoints/
+training_notebooks/predictions.ipynb
+training_notebooks/explore_architecture.ipy
